@@ -90,7 +90,7 @@ public class atv_quiz {
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
-        }while(!res.equalsIgnoreCase("fimdostemposprepareiumasurpresaquandovocemorrevocedescobreencontreachaveescondidotentenovamentequepenasuadesistencia"));
+        }while(!res.equalsIgnoreCase("fimdostemposprepareiumasurpresaquandovocemorrebase64vocedescobreencontreachaveescondidotentenovamentequepenasuadesistencia"));
 
 
         System.out.println("Estavam certos, a vitória foi feita para poucos,\npena se não conseguistes aproveitar da forma correta.");
