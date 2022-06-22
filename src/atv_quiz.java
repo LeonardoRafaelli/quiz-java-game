@@ -1,11 +1,10 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class atv_quiz {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String res;
-
+        int verify = 0;
 
         System.out.println("Bem vindo ao QUIZ??");
         System.out.println("2008, o filme aonde o tempo não existe mais");
@@ -49,12 +48,12 @@ public class atv_quiz {
             System.out.print("-->: ");
             res = sc.nextLine();
             if(res.equalsIgnoreCase("hidden")){
-                System.out.println(".--. - / -... .-.");
+                System.out.println("≅");
             }
         }while(!res.equalsIgnoreCase("escondido"));
 
 
-        System.out.println("CIFR7A DE >CESAR<");
+        System.out.println(">CESAR<7");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
@@ -78,11 +77,14 @@ public class atv_quiz {
             System.out.print("-->: ");
             res = sc.nextLine();
             if(res.equalsIgnoreCase("Giovan Battista Bellaso")){
-                System.out.println("Este jogo não é certo key-DESISTA");
+                System.out.println("Nada é o que parece, DESISTA");
+                verify = 1;
             } else
                 if(res.equalsIgnoreCase("Blaise de Vigenere")){
-                    System.out.println("kxlxk://b.ip.kw/2022/06/22/cgwcl6.tfo");
-                    System.out.println("Get your answers all together, answer number 4");
+                    if(verify == 1){
+                        System.out.println("kxlxk://b.ip.kw/2022/06/22/cgwcl6.tfo");
+                        System.out.println("Get your answers all together, 4");
+                    }
                 }
         }while(!res.equalsIgnoreCase("sua desistencia"));
 
