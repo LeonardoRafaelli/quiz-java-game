@@ -49,7 +49,7 @@ public class atv_quiz {
         }while(!res.equalsIgnoreCase("encontre a chave"));
 
         System.out.println("7?");
-        System.out.println("Lawrence Grey, 2015");
+        System.out.println("Lawrence Grey");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
@@ -58,8 +58,8 @@ public class atv_quiz {
             }
         }while(!res.equalsIgnoreCase("escondido"));
 
-        System.out.println("8?");
-        System.out.println(">CESAR<|||||||");
+        System.out.println("7?");
+        System.out.println(">CESAR<");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
