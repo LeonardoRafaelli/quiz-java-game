@@ -49,7 +49,7 @@ public class atv_quiz {
         }while(!res.equalsIgnoreCase("encontre a chave"));
 
         System.out.println("7?");
-        System.out.println("Lawrence Grey");
+        System.out.println("Lawrence Grey, 00110010 ----- 00110011 .....");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
