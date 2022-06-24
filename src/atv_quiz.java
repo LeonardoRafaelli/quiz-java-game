@@ -1,3 +1,9 @@
+/**
+ * @author Diego Planinscheck e Leonardo Rafaelli
+ * @version 0.5
+ * Tema: Enigmas, podendo utilizar o navegador para solucioná-los
+ */
+
 import java.util.Scanner;
 
 public class atv_quiz {
@@ -5,9 +11,12 @@ public class atv_quiz {
         Scanner sc = new Scanner(System.in);
         String res;
         int verify = 0;
+
         System.out.println("Bem vindo ao QUIZ??");
         System.out.println("1?");
         System.out.println("2008, o filme aonde o tempo não existe mais");
+
+        //Do While, foram colocados para que a pessoa responda até que sua resposta seja a esperada pelo programa (solução de cada fase do enigma);
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
@@ -49,17 +58,20 @@ public class atv_quiz {
         }while(!res.equalsIgnoreCase("encontre a chave"));
 
         System.out.println("7?");
-        System.out.println("Lawrence Grey, 00110010 ----- 00110011 .....");
+        System.out.println("Lawrence Grey, 00110010 ----- 00110001 .....");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
+
+            // Ifs foram adicionados para dar dicas ao jogador e também para dividir a fase em etapas.
+
             if(res.equalsIgnoreCase("hidden")){
                 System.out.println("≅");
             }
         }while(!res.equalsIgnoreCase("escondido"));
 
         System.out.println("7?");
-        System.out.println(">CESAR<");
+        System.out.println("->CESAR<-");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
@@ -69,11 +81,11 @@ public class atv_quiz {
         }while(!res.equalsIgnoreCase("tente novamente"));
 
         System.out.println("9?");
-        System.out.println("winner?");
+        System.out.println("gajninto??");
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
-            if(res.equalsIgnoreCase("no")){
+            if(res.equalsIgnoreCase("ne")){
                 System.out.println("איזו בושה");
             }
         }while(!res.equalsIgnoreCase("que pena"));
@@ -83,6 +95,8 @@ public class atv_quiz {
         do{
             System.out.print("-->: ");
             res = sc.nextLine();
+
+            //if else, foram adicionados para separar as fases em etapas também.
             if(res.equalsIgnoreCase("Giovan Battista Bellaso")){
                 System.out.println("Nada é o que parece, DESISTA");
                 verify = 1;
